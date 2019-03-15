@@ -10,3 +10,4 @@ The scripts included here perform the following functions:
 - Grab Cut Segmentation: Performs interactive foreground segmentation in an image.   
 - PDF to JPEG: Converts PDF files to JPEG/JPG image format. Useful to perform OCR on documents.
 - Video to Image: Converts a video into image frames for processing.
+- rename_images: Renames image files in a directory
