@@ -2,9 +2,9 @@ import os
 import cv2
 import glob
 import numpy as np
-path = r'/home/nivii/Desktop/UndergradResearch/Undergrad Research/Yinghao/Round3/Masks'# Name of the folder with the files
-pattern = r'*.jpg' # File extension of interest
-title_pattern = r'sy_' # Change to the pattern, to include title
+path = r'/home/nivii/Desktop/UndergradResearch/Undergrad Research/Anthony/Round2/Annotations'# Name of the folder with the files
+pattern = r'*.xml' # File extension of interest
+title_pattern = r'sa' # Change to the pattern, to include title
 
 #Renaming files without consecutive names
 def rename(dir, pattern, titlePattern):
