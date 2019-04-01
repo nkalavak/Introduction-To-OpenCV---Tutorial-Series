@@ -5,8 +5,8 @@ import os
 import cv2
 import glob
 import numpy as np
-finddata_path = r'/home/nivii/Desktop/Data/wicv/Masks/'# Name of the folder with the files
-savedata_path = r'/home/nivii/Desktop/Data/wicv/image/'
+finddata_path = r'/home/nivii/Desktop/MICCAI2019_Dataset/Test/surgery4' #/ground_truth'# Name of the folder with the files
+savedata_path = r'/home/nivii/Desktop/MICCAI2019_Dataset/Test/surgery4' #/ground_truth'
 pattern = r'*.jpg' # File extension of interest
    
 def image_crop(dir, new_dir, extension):

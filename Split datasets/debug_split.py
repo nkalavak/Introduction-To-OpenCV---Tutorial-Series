@@ -1,19 +1,3 @@
-"""Split the SIGNS dataset into train/val/test and resize images to 64x64.
-The SIGNS dataset comes into the following format:
-    train_signs/
-        0_IMG_5864.jpg
-        ...
-    test_signs/
-        0_IMG_5942.jpg
-        ...
-Original images have size (3024, 3024).
-Resizing to (64, 64) reduces the dataset size from 1.16 GB to 4.7 MB, and loading smaller images
-makes training faster.
-We already have a test set created, so we only need to split "train_signs" into train and val sets.
-Because we don't have a lot of images and we want that the statistics on the val set be as
-representative as possible, we'll take 20% of "train_signs" as val set.
-"""
-
 import argparse
 import random
 import os
@@ -24,7 +8,7 @@ from tqdm import tqdm
 SIZE = 64
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_dir', default='/home/nivii/Desktop/Data/wicv/Images', help="Directory with the SIGNS dataset")
+parser.add_argument('--data_dir', default='/home/nivii/Desktop/Data/wicv/Images', help="Directory with the dataset")
 parser.add_argument('--output_dir', default='/home/nivii/Desktop/Data/wicv/Image_Data', help="Where to write the new data")
 
 Masks_orig = r'/home/nivii/Desktop/Data/wicv/Masks'
